@@ -22,17 +22,35 @@ assets/img/         Fotografía real: consultorio, quirófano, equipo
 
 ## Sistema de diseño
 
-Los tokens salen de `Protocolo SER / Sistema de Diseño SER / 03-design-tokens.md`.
+**La fuente de verdad es el proyecto de Claude Design**
+`drjorgebarbachano.com.dc.html` (proyecto `90838b01-d365-4968-9c4a-a62f7bd08f7e`), construido sobre
+el *SER — Dra. Lili Padilla Design System* (`452aee4c-…`). Los `.md` de
+`Protocolo SER / Sistema de Diseño SER` describen una iteración anterior con navy `#071e30`, ámbar
+`#e8b84b` y Montserrat/Open Sans: **están desactualizados frente a este sitio.**
+
+Lo que sí se implementó — la desviación cálida de Jorge:
+
+| Rol | Valor |
+|---|---|
+| Fondo oscuro dominante | `--jb-carbon` `#26272a` (carbón, no navy) |
+| Superficies sobre oscuro | `--jb-carbon-2` `#2f3033` · `--jb-carbon-3` `#3c3e42` |
+| Acento personal | `--jb-oro` `#d9bd7a` (oro champagne) |
+| Acento como **texto sobre claro** | `--jb-oro-ink` `#6b5410` |
+| Grounds cálidos | `--jb-arena` `#efe7d8` · `--jb-crema` `#f7f2e8` |
+| Pertenencia al ecosistema | `--ser-teal` `#00a8a8` · `--ser-teal-soft` `#7fe3e3` |
+| Display | Newsreader (serif) |
+| Cuerpo / UI | Figtree (sans) |
+
 **Nunca escribas un hex suelto** — usa la variable CSS.
 
-Las tres reglas que más se rompen:
+Las reglas que más se rompen:
 
-1. `--ser-teal` sobre blanco **no es texto** (2.93:1). Para heading azulado usa `--ser-azul`.
-2. `--jb-ambar` sobre blanco **no es texto** (1.84:1). Es fondo de botón. Para texto de acento sobre
-   claro usa `--jb-bronce` (5.30:1).
-3. `--ser-gris` **no es texto** sobre claro. Es borde. Para caption usa `--ser-gris-txt`.
+1. **El oro `#d9bd7a` no es texto sobre claro** (1.9:1). Es fondo de botón y texto sobre carbón.
+   Para texto de acento sobre fondo claro usa `--jb-oro-ink` `#6b5410` (7.13:1 sobre blanco).
+2. **El teal `#00a8a8` no es texto sobre blanco** (2.93:1). Sobre carbón sí (5.10:1).
+3. **La cursiva dorada (`.gold-em`) es la firma tipográfica del ecosistema** — una por bloque, en la
+   palabra que carga el significado ("vida?", "breath", "vida."). No es decoración.
 
-Proporción de color: ~70% núcleo S·E·R (navy/teal/hueso) · ~30% acento cálido de Jorge.
 **El teal siempre aparece** — es lo que dice "esto pertenece a S·E·R".
 
 ## Cifras congeladas

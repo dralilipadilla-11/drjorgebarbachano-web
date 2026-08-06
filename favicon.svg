@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Dr. Jorge Barbachano">
+  <rect width="64" height="64" rx="14" fill="#26272a"/>
+  <!-- Dos trazos de flujo de aire: teal (pertenencia S·E·R) + oro (acento de Jorge) -->
+  <path d="M16 44c0-12 6-20 16-20 6 0 10 3 10 7s-3 6-7 6"
+        fill="none" stroke="#00a8a8" stroke-width="5" stroke-linecap="round"/>
+  <path d="M24 50c0-12 6-20 16-20 6 0 10 3 10 7s-3 6-7 6"
+        fill="none" stroke="#d9bd7a" stroke-width="5" stroke-linecap="round"/>
+</svg>

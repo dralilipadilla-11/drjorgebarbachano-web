@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+
+# /privacidad lleva <meta name="robots" content="noindex"> en la propia página.
+# No se bloquea aquí a propósito: Google necesita rastrearla para ver la etiqueta.
+
+Sitemap: https://drjorgebarbachano.com/sitemap.xml

@@ -71,6 +71,20 @@ No hay botón sin destino. Solo existen estos:
 Todos los enlaces de Calendly llevan `utm_source=web` y un `utm_medium` que identifica el bloque,
 para saber qué sección convierte.
 
+### Calendly: un solo tipo de cita
+
+La cuenta de Jorge está en **plan gratuito**, que admite **un único tipo de evento**. Por eso:
+
+- Todos los botones y los dos embeds apuntan al **perfil** (`/drjorgebarbachano`), no a un evento
+  específico. Con un solo evento el perfil resuelve igual.
+- **No existe un evento aparte para pacientes internacionales.** La diferencia de precio
+  ($1,000 MXN nacional · $2,000 MXN / ~$100 USD internacional) se comunica en el sitio junto a cada
+  punto de agenda y se confirma por WhatsApp al reservar. Es la parte frágil del flujo: si alguien
+  agenda sin leer, llega esperando el precio nacional.
+- Si Jorge pasa a plan de pago y abre el segundo evento, hay que cambiar el `data-url` de los dos
+  embeds y los `href` de los botones internacionales a la URL específica, y quitar las notas
+  aclaratorias de precio que están junto a los embeds.
+
 ## SEO
 
 - Una sola `<h1>` por página.
@@ -87,9 +101,12 @@ para que las rutas absolutas (`/riviera-sleep`, `/privacidad`) resuelvan igual q
 
 ## Pendientes antes de dar por cerrada la v1
 
-- [ ] Confirmar los tipos de evento en Calendly: consulta nacional ($1,000 MXN) y valoración
-      internacional ($2,000 MXN / ~$100 USD). Hoy todos los botones apuntan al perfil general.
-- [ ] Verificar que la cuenta de Calendly esté en zona horaria `America/Cancun` (UTC−5 todo el año).
+- [x] ~~Confirmar los tipos de evento en Calendly~~ — **resuelto: un solo evento.** Plan gratuito.
+      La diferencia de precio internacional se comunica en copy, no con un segundo evento.
+- [ ] Verificar que la cuenta de Calendly de Jorge esté en zona horaria `America/Cancun`
+      (UTC−5 todo el año, sin horario de verano).
+- [ ] La cuenta de Calendly de Lili está en `America/Chicago`, que sí cambia con el horario de
+      verano — en invierno los horarios se desfasan una hora. Corregir también.
 - [ ] Activar `hola@drjorgebarbachano.com`.
 - [ ] Fotos profesionales fuera del quirófano: entrenando, en consulta.
 - [ ] Fotos antes/después con consentimiento firmado.

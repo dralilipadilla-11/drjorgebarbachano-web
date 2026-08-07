@@ -41,7 +41,14 @@
 
   <link rel="preload" as="image" href="assets/img/jorge-consultorio.jpg" fetchpriority="high">
   <link rel="stylesheet" href="styles.css?v=2">
+  <!-- Varios formatos: el SVG es el preferido por navegadores modernos, pero
+       Google Search y navegadores más viejos piden /favicon.ico directamente
+       sin mirar esta etiqueta — si no existe, se cae al globo genérico. -->
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="favicon-32.png" sizes="32x32" type="image/png">
+  <link rel="icon" href="favicon-192.png" sizes="192x192" type="image/png">
+  <link rel="shortcut icon" href="favicon.ico">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
 
   <!-- =========================================================
        Datos estructurados. La entidad Physician vive aquí y las

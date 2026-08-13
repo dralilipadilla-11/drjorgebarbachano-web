@@ -16,3 +16,14 @@ https://cute-marigold-79c5c6.netlify.app/*  https://drjorgebarbachano.com/:splat
 # Alias en inglés hacia la misma página de turismo médico.
 /en                  /riviera-sleep    301!
 /english             /riviera-sleep    301!
+
+# El Protocolo S·E·R es compartido, pero su página vive en el sitio de Lili y
+# ahí se mantiene una sola vez. Aquí solo se redirige para que la URL funcione
+# si alguien la teclea o la comparte.
+#
+# Sin ! a propósito: no existe /protocolo-ser.html en este repo, así que no hay
+# archivo que la regla tenga que sobrescribir. Netlify conserva la query string,
+# de modo que los utm_ sobreviven el salto.
+#
+# NO se lista en sitemap.xml: es un 301, no una página indexable.
+/protocolo-ser       https://dralilipadilla.com/protocolo-ser   301

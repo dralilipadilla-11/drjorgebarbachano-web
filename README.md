@@ -14,6 +14,7 @@ riviera-sleep.html  Turismo médico, en inglés (EUA / Canadá)
 privacidad.html     Aviso de privacidad LFPDPPP (noindex)
 styles.css          Sistema de diseño S·E·R con acento cálido de Jorge
 main.js             Nav, menú móvil, reveal on scroll, Calendly diferido
+analytics.js        GA4 + Google Ads (inactivo hasta llenar los IDs) y utm hacia Calendly
 netlify.toml        Headers de seguridad y caché
 _redirects          Una sola URL por página (evita duplicados en Google)
 robots.txt          sitemap.xml
@@ -64,7 +65,7 @@ No hay botón sin destino. Solo existen estos:
 
 | Botón | Destino |
 |---|---|
-| Agenda tu consulta — $1,000 MXN* | `https://calendly.com/drjorgebarbachano` |
+| Agenda tu consulta — $1,500 MXN · $100 USD internacional | `https://calendly.com/drjorgebarbachano` |
 | WhatsApp directo / WhatsApp us now | `https://wa.me/529981339518` (con mensaje precargado) |
 | Tarjeta Dra. Lili Padilla | `https://dralilipadilla.com` |
 
@@ -78,7 +79,7 @@ La cuenta de Jorge está en **plan gratuito**, que admite **un único tipo de ev
 - Todos los botones y los dos embeds apuntan al **perfil** (`/drjorgebarbachano`), no a un evento
   específico. Con un solo evento el perfil resuelve igual.
 - **No existe un evento aparte para pacientes internacionales.** La diferencia de precio
-  ($1,000 MXN nacional · $2,000 MXN / ~$100 USD internacional) se comunica en el sitio junto a cada
+  ($1,500 MXN nacional · $100 USD internacional por video) se comunica en el sitio junto a cada
   punto de agenda y se confirma por WhatsApp al reservar. Es la parte frágil del flujo: si alguien
   agenda sin leer, llega esperando el precio nacional.
 - Si Jorge pasa a plan de pago y abre el segundo evento, hay que cambiar el `data-url` de los dos
@@ -107,7 +108,7 @@ para que las rutas absolutas (`/riviera-sleep`, `/privacidad`) resuelvan igual q
       (UTC−5 todo el año, sin horario de verano).
 - [ ] La cuenta de Calendly de Lili está en `America/Chicago`, que sí cambia con el horario de
       verano — en invierno los horarios se desfasan una hora. Corregir también.
-- [ ] Activar `hola@drjorgebarbachano.com`.
+- [x] ~~Activar `hola@drjorgebarbachano.com`~~ — el sitio usa `barbachanotorres@gmail.com`.
 - [ ] Fotos profesionales fuera del quirófano: entrenando, en consulta.
 - [ ] Fotos antes/después con consentimiento firmado.
 - [ ] Revisión legal del aviso de privacidad.
